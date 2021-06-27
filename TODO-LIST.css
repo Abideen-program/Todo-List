@@ -1,0 +1,140 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.coolTitle,
+.complete{
+    text-align: center;
+    font-size: 40px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: tomato;
+    margin-bottom: 30px;
+    text-shadow:
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgray
+    ;
+}
+
+.container{
+    background-color: rgb(97, 213, 218);
+    width: 500px;
+    text-align: center;
+    padding: 30px;
+}
+
+.done{
+    text-decoration:  line-through;
+}
+
+ul{
+    margin: 1rem 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.com{
+    margin-left: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid crimson;
+    margin-top: 10px;
+}
+
+#first{
+    color: crimson;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+#enter{
+    width: 25%;
+}
+
+.del,
+.com,
+#enter{
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid crimson;
+    background-color: transparent;
+    color: crimson;
+    cursor: pointer;
+}
+
+.li{
+    font-size: 18px;
+    color: tomato;
+    padding: 10px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.complete{
+    font-size: 30px;
+    margin: 30px 0;
+    display: none;
+}
+
+@media(max-width: 413px){
+    .coolTitle{
+        font-size: 30px;
+    }
+
+    #first{
+        font-size: 14px;
+    }
+    
+    .li{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 347px){
+    .coolTitle{
+        font-size: 25px;
+    }
+    .complete{
+        font-size: 20px;
+    }
+
+    .del,
+    .com{
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
